@@ -1,0 +1,6 @@
+"0","ggplot(dados_treinamento, aes(x = Petal.Length, y = Petal.Width, color=Species)) + "
+"0","  geom_point() + "
+"0","  scale_color_discrete(name = ""Legenda"", labels = c(""Não Virginica"", ""Virginica""))+"
+"0","  ylab('Width (largura)') + "
+"0","  xlab('Length (Comprimento)') + "
+"0","  ggtitle(""Gráfico de Dispersão"")"

@@ -1,0 +1,4 @@
+"0","?createDataPartition"
+"0","indices_treinamento <- createDataPartition(dataset$Species, p = 0.9, list = FALSE)"
+"0","dados_treinamento <-dataset[indices_treinamento,]"
+"0","dados_teste <- dataset[-indices_treinamento,]"

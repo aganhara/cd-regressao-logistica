@@ -1,0 +1,50 @@
+---
+title: "Exercicio 2 - Machine Learning - Regressão Logística"
+output: html_notebook
+author: "Anderson Ganhara"
+---
+
+```{r}
+install.packages("e1071")
+library(datasets) 
+library(varhandle)
+library(tidyverse)
+library(fastDummies)
+library(caret)
+library(e1071)
+```
+
+Considere o desenvolvimento do modelo de classificação do Exercício Computacional 1 - obtenha a matriz de
+confusão do classificador. O ponto chave aqui é realizar a interpretação dos resultados obtidos.
+
+```{r}
+dataset = iris
+binary_species <- to.dummy(iris$Species, "species") %>% as.data.frame()
+# Espécies: setosa - versicolor - virginica
+Species = binary_species$species.virginica %>% as.factor()
+dataset = data.frame(dataset[,1:4],Species)
+
+set.seed(12)
+
+indices_treinamento <- createDataPartition(dataset$Species, p = 0.9, list = FALSE)
+dados_treinamento <-dataset[indices_treinamento,]
+dados_teste <- dataset[-indices_treinamento,]
+equation <- " Species ~ ." %>% as.formula()
+modelo_ML_logistic <- glm(equation, data = dados_treinamento, family = 'binomial')
+```
+
+```{r}
+previsao_teste <- predict(modelo_ML_logistic, dados_teste, type="response") %>% as.numeric() %>% round() %>% as.factor()
+previsao_teste_data <- data.frame(previsao_teste, dados_teste$Species)
+confusionMatrix(data = previsao_teste, reference = dados_teste$Species, positive = "1")
+```
+
+```{r}
+modelo_ML_logistic_2 <- glm(Species ~ Petal.Width + Petal.Length, data = dados_treinamento, family = 'binomial')
+```
+
+```{r}
+previsao_teste <- predict(modelo_ML_logistic_2, dados_teste, type="response") %>% as.numeric() %>% round() %>% as.factor()
+previsao_teste_data <- data.frame(previsao_teste, dados_teste$Species)
+confusionMatrix(data = previsao_teste, reference = dados_teste$Species, positive = "1")
+```

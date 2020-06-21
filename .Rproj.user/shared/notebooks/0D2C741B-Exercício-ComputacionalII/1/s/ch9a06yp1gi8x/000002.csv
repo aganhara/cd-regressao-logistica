@@ -1,0 +1,88 @@
+"0","install.packages(""ROCR"")
+"
+"2","WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+"
+"2","Installing package into ‘C:/Users/aganh/Documents/R/win-library/3.6’
+(as ‘lib’ is unspecified)
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/ROCR_1.0-11.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 405720 bytes (396 KB)
+"
+"2","downloaded 396 KB
+
+"
+"1","package â€˜ROCRâ€™ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\aganh\AppData\Local\Temp\RtmpI5r69Y\downloaded_packages"
+"1",""
+"1","
+"
+"2","Warning messages:
+"
+"2","1: "
+"2","In native_encode(options$fig.path) :"
+"2","
+ "
+"2"," some characters may not work under the current locale
+"
+"2","2: "
+"2","In native_encode(options$fig.path) :"
+"2","
+ "
+"2"," some characters may not work under the current locale
+"
+"2","3: "
+"2","In native_encode(options$fig.path) :"
+"2","
+ "
+"2"," some characters may not work under the current locale
+"
+"2","4: "
+"2","In native_encode(options$fig.path) :"
+"2","
+ "
+"2"," some characters may not work under the current locale
+"
+"2","5: "
+"2","In native_encode(options$fig.path) :"
+"2","
+ "
+"2"," some characters may not work under the current locale
+"
+"0","install.packages(""ROCR"")"
+"2","WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+"
+"2","Installing package into ‘C:/Users/aganh/Documents/R/win-library/3.6’
+(as ‘lib’ is unspecified)
+"
+"2","trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/ROCR_1.0-11.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 405720 bytes (396 KB)
+"
+"2","downloaded 396 KB
+
+"
+"1","package â€˜ROCRâ€™ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\aganh\AppData\Local\Temp\RtmpI5r69Y\downloaded_packages"
+"1",""
+"1","
+"
+"0","library(caret)"
+"0","library(ROCR)"
+"0","library(e1071)"

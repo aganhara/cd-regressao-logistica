@@ -1,0 +1,2 @@
+"0","modelo_ML_logistic_2 <- glm(Species ~ Petal.Width + Petal.Length, data = dados_treinamento, family = 'binomial')"
+"2","glm.fit: fitted probabilities numerically 0 or 1 occurred"

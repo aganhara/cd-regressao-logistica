@@ -1,0 +1,5 @@
+"0","ggplot(data = dados_treinamento, aes(x=Petal.Width, fill= Species)) + "
+"0","  geom_density(alpha=.5) + "
+"0","  xlab('Largura (width)') +"
+"0","  scale_fill_discrete(name = ""Legenda"", labels = c(""Não Virginica"",""Virginica"")) + "
+"0","  ggtitle(""Gráfico de Densidades"") "

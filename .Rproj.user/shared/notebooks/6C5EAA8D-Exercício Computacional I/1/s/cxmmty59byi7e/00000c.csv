@@ -1,0 +1,5 @@
+"0","equation <- "" Species ~ ."" %>% as.formula()"
+"0","# modelo_ML_logistic <- glm(""Species ~ ."", data = dados_treinamento, family = 'binomial')"
+"0","modelo_ML_logistic <- glm(equation, data = dados_treinamento, family = 'binomial')"
+"2","glm.fit: algorithm did not converge"
+"2","glm.fit: fitted probabilities numerically 0 or 1 occurred"

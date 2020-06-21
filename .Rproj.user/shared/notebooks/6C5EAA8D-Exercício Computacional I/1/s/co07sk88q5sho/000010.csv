@@ -1,0 +1,3 @@
+"0","feature_dataframe    = dados_treinamento[,1:4]"
+"0","matrix_corr_features = cor(feature_dataframe)"
+"0","corrplot(matrix_corr_features, method = 'color')"

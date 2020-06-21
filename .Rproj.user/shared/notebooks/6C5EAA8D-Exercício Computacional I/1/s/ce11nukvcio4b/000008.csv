@@ -1,0 +1,5 @@
+"0","# Processando as classes para sua binarização do problema de classificação"
+"0","# Objetivo: capturar as classes de interesse e atribuir 0 ou 1 para a espécie considerada no dataset"
+"0","binary_species <- to.dummy(iris$Species, ""species"")"
+"0","binary_species <- as.data.frame(binary_species)"
+"0","unique(binary_species)"
